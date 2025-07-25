@@ -44,7 +44,7 @@ jobs:
 
       - name: Run Alembic migrations
         run: alembic upgrade head
-        working-directory: ./app
+        working-directory: .
 
       - name: Run tests
         run: pytest
