@@ -49,4 +49,4 @@ jobs:
 
       - name: Run tests
         run: pytest
-        working-directory: ./app
+        working-directory: ./tests
