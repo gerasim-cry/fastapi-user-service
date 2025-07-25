@@ -38,7 +38,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r app/requirements.txt
+        pip install -r requirements.txt
 
     - name: Run Alembic migrations
       run: |
