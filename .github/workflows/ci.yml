@@ -47,7 +47,7 @@ jobs:
 
       - name: Create test user and database
         run: |
-          PGPASSWORD=postgres psql -h localhost -U postgres -d postgres -c "CREATE USER "user" WITH PASSWORD "password";"
+          PGPASSWORD=postgres psql -h localhost -U postgres -d postgres -c "CREATE USER "user" WITH PASSWORD 'password';"
           PGPASSWORD=postgres psql -h localhost -U postgres -d postgres -c "CREATE DATABASE appdb OWNER user;"
 
       - name: Install dependencies
