@@ -103,3 +103,7 @@ def read_logs(
     if current_user.role != "admin":
         raise HTTPException(status_code=403, detail="Not enough permissions")
     return crud.get_logs(db)
+
+@router.get("/ping")
+async def ping():
+    return {"message": "pong"}
