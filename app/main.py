@@ -7,7 +7,6 @@ from fastapi.openapi.utils import get_openapi
 
 app = FastAPI(debug=True)
 
-Base.metadata.create_all(bind=engine)
 app.include_router(router)
 
 def custom_openapi():
